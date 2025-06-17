@@ -7,8 +7,7 @@ load_dotenv()
 app = Flask(__name__)
 
 llama_api_key = os.getenv('LLAMA_API_KEY')
-# llama_api_endpoint = os.getenv('LLAMA_API_ENDPOINT')
-llama_api_endpoint = "https://openrouter.ai/api/v1/chat/completions"
+llama_api_endpoint = os.getenv('LLAMA_API_ENDPOINT')
 llama_api_model = os.getenv('LLAMA_API_MODEL')
 
 
@@ -32,15 +31,20 @@ def chat():
         }
 
         payload = {
-            # "model": llama_api_model,
-            "model": "meta-llama/llama-3.3-8b-instruct:free",
+            "model": llama_api_model,
             "messages": [
-                {"role": "system", "content": "Eres un asistente virtual."},
+                {"role": "system",
+                    "content": "Eres un especialista en astronomia. Responde a las preguntas de los usuarios con informacion precisa y breve."},
                 {"role": "user", "content": user_message}
             ],
-            "temperature": 0.7,
-            "max_tokens": 150,
-            "top_p": 1.0,
+            "temperature": 0.2,
+            "max_tokens": 300,
+            "top_p": 0.7,
+            "frequency_penalty": 0.5,
+
+            "presence_penalty": 0.5,
+            "stop": ["\n\n", "User:", "Assistant:"],
+            "lenght_penalty": 0.5
         }
 
         response = requests.post(
