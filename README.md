@@ -1,16 +1,17 @@
-Chatbot con Interfaz Galáctica 🌌
-Este proyecto es un chatbot avanzado con una impresionante interfaz de usuario inspirada en el cosmos, que utiliza modelos de lenguaje de última generación para proporcionar respuestas inteligentes y formateadas.
+AtroChatbot con Interfaz Galáctica minimalista 🌌
+Este proyecto es un chatbot avanzado con una impresionante interfaz de usuario inspirada en el cosmos y a la ves minimalista, que utiliza el modelo de lenguaje llama 3 para proporcionar respuestas inteligentes y formateadas.
 
 🚀 Características Principales
-Interfaz galáctica: Diseño oscuro con efectos de estrellas y nebulosas animadas
 
-Chat inteligente: Integración con modelos de lenguaje avanzados (Llama 3)
+- Interfaz galáctica: Diseño oscuro con efectos de estrellas y nebulosas animadas
 
-Formateo de respuestas: Soporte para negritas y listas automáticas
+- Chat inteligente: Integración con modelos de lenguaje avanzados (Llama 3)
 
-Indicadores visuales: Animaciones y efectos durante la interacción
+- Formateo de respuestas: Soporte para negritas y listas automáticas
 
-Diseño responsive: Funciona perfectamente en móviles y escritorio
+- Indicadores visuales: Animaciones y efectos durante la interacción
+
+- Diseño responsive: Funciona perfectamente en móviles y escritorio
 
 🛠️ Tecnologías Utilizadas
 Frontend
@@ -46,37 +47,35 @@ Docker: Contenerización de la aplicación
 
 Docker Compose: Orquestación de servicios
 
-Gunicorn: Servidor WSGI para producción
-
 APIs
-Llama API: Integración con modelos de lenguaje avanzados
+Llama API: Integración con modelos de lenguaje avanzados (llama 3)
 
 Dotenv: Gestión de variables de entorno
 
-💻 Capturas de Pantalla
-https://ejemplo.com/screenshot1.jpg
-Interfaz principal con efecto de galaxia oscura
-
-https://ejemplo.com/screenshot2.jpg
-Ejemplo de conversación con respuestas formateadas
+🌐 Alojamiento de la Aplicación:
+BACK4APP:
+https://astrochatbot-67v7o2zi.b4a.run/
 
 ⚙️ Configuración Rápida
 Clona el repositorio:
 
-bash
-git clone https://github.com/tuusuario/chatbot-galactico.git
-cd chatbot-galactico
+<code>
+git clone https://github.com/AlbertoDPM30/chatbot_llama_ai
+cd chatbot_llama_ai
+<code>
+
 Configura las variables de entorno:
 
-bash
-cp .env.example .env
+**Solicite las Variables de entorno con el propietario**
 
 # Edita .env con tus credenciales
 
 Inicia con Docker Compose:
 
-bash
+<code>
 docker-compose up -d --build
+</code>
+
 Abre en tu navegador:
 
 text
