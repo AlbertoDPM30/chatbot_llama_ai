@@ -9,7 +9,7 @@ services:
       - .:/app
     env_file:
       - .env
-    command: ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "app:app"]
+    command: ["flask", "run", "--host", "0.0.0.0"]
     restart: unless-stopped
     networks:
       - llama-network
