@@ -38,6 +38,7 @@ Este proyecto es un chatbot avanzado con una impresionante interfaz de usuario i
 - Gestión de eventos de usuario
 
 **Backend**
+
 **Python:** Lenguaje principal del servidor
 
 **Flask:** Framework web ligero para el backend
@@ -45,11 +46,13 @@ Este proyecto es un chatbot avanzado con una impresionante interfaz de usuario i
 **Requests:** Manejo de peticiones HTTP a la API de Llama
 
 **Infraestructura**
+
 **Docker:** Contenerización de la aplicación
 
 **Docker Compose:** Orquestación de servicios
 
 **APIs**
+
 **Llama API:** Integración con modelos de lenguaje avanzados (llama 3)
 
 **Dotenv:** Gestión de variables de entorno
@@ -59,60 +62,60 @@ Este proyecto es un chatbot avanzado con una impresionante interfaz de usuario i
 **BACK4APP:**
 https://astrochatbot-67v7o2zi.b4a.run/
 
-⚙️ Configuración Rápida
+<h3>⚙️ Configuración Rápida</h3>
 Clona el repositorio:
 
-<code>
-git clone https://github.com/AlbertoDPM30/chatbot_llama_ai
-cd chatbot_llama_ai
-<code>
+<code>git clone https://github.com/AlbertoDPM30/chatbot_llama_ai
+cd chatbot_llama_ai<code>
 
-Configura las variables de entorno:
+**Configura las variables de entorno:**
 
-**Solicite las Variables de entorno con el propietario**
+<small>Solicite las Variables de entorno con el propietario</small>
 
-# Edita .env con tus credenciales
-
-Inicia con Docker Compose:
+**Inicia con Docker Compose:**
 
 <code>docker-compose up -d --build</code>
 
-Abre en tu navegador:
+**Abre en tu navegador:**
 
 http://localhost:5000
-🌟 Características Avanzadas
-Sintaxis Markdown simple:
 
-**texto** se convierte en negrita
+<h3>🌟 Características Avanzadas</h3>
 
-Líneas que comienzan con \* se convierten en listas
+**Sintaxis Markdown simple:**
 
-Efectos visuales:
+- **texto** se convierte en negrita
 
-Animación sutil de estrellas
+- Líneas que comienzan con \* se convierten en listas
 
-Degradado galáctico animado
+- Efectos visuales:
 
-Transiciones suaves entre mensajes
+- Animación sutil de estrellas
 
-Optimizado para producción:
+- Degradado galáctico animado
 
-Configuración lista para Docker
+- Transiciones suaves entre mensajes
 
-Servidor Gunicorn para alta disponibilidad
+- Optimizado para producción:
 
-Gestión segura de credenciales
+- Configuración lista para Docker
 
-📚 Documentación Adicional
-Para más detalles sobre la configuración y personalización, consulta los archivos:
+- Servidor Gunicorn para alta disponibilidad
 
-Dockerfile - Configuración del contenedor
+- Gestión segura de credenciales
 
-docker-compose.yml - Orquestación de servicios
+<h3>📚 Documentación Adicional</h3>
 
-app.py - Lógica principal del servidor
+**Para más detalles sobre la configuración y personalización, consulta los archivos:**
 
-static/script.js - Funcionalidad del frontend
+- Dockerfile - Configuración del contenedor
 
-📄 Licencia
-Este proyecto está licenciado bajo la Licencia MIT.
+- docker-compose.yml - Orquestación de servicios
+
+- app.py - Lógica principal del servidor
+
+- static/script.js - Funcionalidad del frontend
+
+<h3>📄 Licencia</h3>
+
+Este proyecto está licenciado bajo la Licencia **MIT**.
