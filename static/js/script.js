@@ -69,6 +69,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Enviar mensaje al servidor
   async function sendMessage() {
     const message = messageInput.value.trim();
+
+    // Activar animación del cohete
+    let rocketIcon = document.querySelector(".send-icon");
+    rocketIcon.classList.add("send-icon-activated");
+
+    setTimeout(() => {
+      rocketIcon.classList.remove("send-icon-activated");
+    }, 600);
+
+    // Validar mensaje no vacío
     if (!message) return;
 
     // Añadir mensaje de usuario
