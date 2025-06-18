@@ -22,7 +22,7 @@ def chat():
     user_message = user_data.get("message")
 
     if not user_message:
-        return jsonify({'error': 'No message provided'}), 400
+        return jsonify({'error': 'Sin mensajes del proveedor'}), 400
 
     try:
         headers = {
