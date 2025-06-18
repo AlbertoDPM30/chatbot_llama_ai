@@ -63,14 +63,15 @@ Este proyecto es un chatbot avanzado con una impresionante interfaz de usuario i
 https://astrochatbot-67v7o2zi.b4a.run/
 
 <h3>⚙️ Configuración Rápida</h3>
-Clona el repositorio:
+
+**Clona el repositorio:**
 
 <code>git clone https://github.com/AlbertoDPM30/chatbot_llama_ai
-cd chatbot_llama_ai<code>
+cd chatbot_llama_ai</code>
 
 **Configura las variables de entorno:**
 
-<small>Solicite las Variables de entorno con el propietario</small>
+- modifique sus propias variables de entorno creando un archivo .env
 
 **Inicia con Docker Compose:**
 
@@ -84,23 +85,17 @@ http://localhost:5000
 
 **Sintaxis Markdown simple:**
 
-- **texto** se convierte en negrita
+- texto se convierte en negrita
 
 - Líneas que comienzan con \* se convierten en listas
 
 - Efectos visuales:
 
-- Animación sutil de estrellas
-
-- Degradado galáctico animado
+- Animaciones sutiles
 
 - Transiciones suaves entre mensajes
 
-- Optimizado para producción:
-
 - Configuración lista para Docker
-
-- Servidor Gunicorn para alta disponibilidad
 
 - Gestión segura de credenciales
 
