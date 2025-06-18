@@ -1,7 +1,7 @@
-<h1>AtroChatbot con Interfaz Galáctica minimalista</h1> 🌌
+<h1>AtroChatbot con LLaMA AI 🌌</h1>
 Este proyecto es un chatbot avanzado con una impresionante interfaz de usuario inspirada en el cosmos y a la ves minimalista, que utiliza el modelo de lenguaje llama 3 para proporcionar respuestas inteligentes y formateadas.
 
-🚀 Características Principales
+<h3>🚀 Características Principales</h3>
 
 - Interfaz galáctica: Diseño oscuro con efectos de estrellas y nebulosas animadas
 
@@ -13,47 +13,49 @@ Este proyecto es un chatbot avanzado con una impresionante interfaz de usuario i
 
 - Diseño responsive: Funciona perfectamente en móviles y escritorio
 
-🛠️ Tecnologías Utilizadas
-Frontend
-HTML5: Estructura semántica de la aplicación
+<h3>🛠️ Tecnologías Utilizadas<h3>
 
-CSS3:
+**Frontend**
+**HTML5:** Estructura semántica de la aplicación
 
-Animaciones y transiciones fluidas
+**CSS3:**
 
-Efectos de degradado galáctico
+- Animaciones y transiciones fluidas
 
-Diseño responsive con Flexbox
+- Efectos de degradado galáctico
 
-Efectos de estrellas con radial-gradients
+- Diseño responsive con Flexbox
 
-JavaScript:
+- Efectos de estrellas con radial-gradients
 
-Comunicación asíncrona con la API
+**JavaScript:**
 
-Formateo dinámico de respuestas (negritas y listas)
+- Comunicación asíncrona con la API
 
-Gestión de eventos de usuario
+- Formateo dinámico de respuestas (negritas y listas)
 
-Backend
-Python: Lenguaje principal del servidor
+- Gestión de eventos de usuario
 
-Flask: Framework web ligero para el backend
+**Backend**
+**Python:** Lenguaje principal del servidor
 
-Requests: Manejo de peticiones HTTP a la API de Llama
+**Flask:** Framework web ligero para el backend
 
-Infraestructura
-Docker: Contenerización de la aplicación
+**Requests:** Manejo de peticiones HTTP a la API de Llama
 
-Docker Compose: Orquestación de servicios
+**Infraestructura**
+**Docker:** Contenerización de la aplicación
 
-APIs
-Llama API: Integración con modelos de lenguaje avanzados (llama 3)
+**Docker Compose:** Orquestación de servicios
 
-Dotenv: Gestión de variables de entorno
+**APIs**
+**Llama API:** Integración con modelos de lenguaje avanzados (llama 3)
 
-🌐 Alojamiento de la Aplicación:
-BACK4APP:
+**Dotenv:** Gestión de variables de entorno
+
+<h3>🌐 Alojamiento de la Aplicación:<h3>
+
+**BACK4APP:**
 https://astrochatbot-67v7o2zi.b4a.run/
 
 ⚙️ Configuración Rápida
