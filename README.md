@@ -1,4 +1,4 @@
-AtroChatbot con Interfaz Galáctica minimalista 🌌
+<h1>AtroChatbot con Interfaz Galáctica minimalista</h1> 🌌
 Este proyecto es un chatbot avanzado con una impresionante interfaz de usuario inspirada en el cosmos y a la ves minimalista, que utiliza el modelo de lenguaje llama 3 para proporcionar respuestas inteligentes y formateadas.
 
 🚀 Características Principales
@@ -72,13 +72,10 @@ Configura las variables de entorno:
 
 Inicia con Docker Compose:
 
-<code>
-docker-compose up -d --build
-</code>
+<code>docker-compose up -d --build</code>
 
 Abre en tu navegador:
 
-text
 http://localhost:5000
 🌟 Características Avanzadas
 Sintaxis Markdown simple:
