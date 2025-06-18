@@ -13,9 +13,10 @@ Este proyecto es un chatbot avanzado con una impresionante interfaz de usuario i
 
 - Diseño responsive: Funciona perfectamente en móviles y escritorio
 
-<h3>🛠️ Tecnologías Utilizadas<h3>
+<h3>🛠️ Tecnologías Utilizadas</h3>
 
 **Frontend**
+
 **HTML5:** Estructura semántica de la aplicación
 
 **CSS3:**
@@ -53,7 +54,7 @@ Este proyecto es un chatbot avanzado con una impresionante interfaz de usuario i
 
 **Dotenv:** Gestión de variables de entorno
 
-<h3>🌐 Alojamiento de la Aplicación:<h3>
+<h3>🌐 Alojamiento de la Aplicación:</h3>
 
 **BACK4APP:**
 https://astrochatbot-67v7o2zi.b4a.run/
