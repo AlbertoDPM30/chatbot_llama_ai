@@ -1,10 +1,20 @@
 from flask import Flask, jsonify, render_template, request
 import os
 import requests
+import sqlite3
+import uuid
 from dotenv import load_dotenv
 
 load_dotenv()
 app = Flask(__name__)
+
+
+def init_db():
+    conn = sqlite3.connect("astrochatbot.db")
+    with open("schema.sql") as f:
+        conn.executescript(f.read())
+    conn.commit()
+
 
 llama_api_key = os.getenv('LLAMA_API_KEY')
 llama_api_endpoint = os.getenv('LLAMA_API_ENDPOINT')
@@ -71,4 +81,5 @@ def chat():
 
 
 if __name__ == '__main__':
+    init_db()
     app.run(debug=True)

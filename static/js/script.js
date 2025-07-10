@@ -1,4 +1,50 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Cargar historial para el aside nav
+  async function loadHistorySidebar() {
+    try {
+      const response = await fetch("/history");
+      if (!response.ok) throw new Error("Error al recuperar historial");
+
+      const history = await response.json();
+      const historyList = document.getElementById("history-list");
+
+      history.forEach((item, index) => {
+        const li = document.createElement("li");
+        li.textContent = item.user_msg;
+        li.addEventListener("click", () => {
+          addMessage(item.user_msg, true);
+          addMessage(item.bot_response, false);
+        });
+        historyList.appendChild(li);
+      });
+    } catch (error) {
+      console.error("Error al cargar historial en el aside:", error);
+    }
+  }
+
+  loadHistorySidebar();
+
+  // Cargar historial completo al iniciar
+  async function loadHistory() {
+    try {
+      const response = await fetch("/history");
+      if (!response.ok) throw new Error("Error al recuperar historial");
+
+      const history = await response.json();
+
+      history.forEach((item) => {
+        addMessage(item.user_msg, true);
+        addMessage(item.bot_response, false);
+      });
+    } catch (error) {
+      console.error("Error al cargar historial:", error);
+      addMessage("⚠️ No se pudo cargar el historial completo.", false);
+    }
+  }
+
+  // Llamar al cargar el DOM
+  loadHistory();
+
   const chatMessages = document.getElementById("chat-messages");
   const messageInput = document.getElementById("message-input");
   const sendButton = document.getElementById("send-button");
