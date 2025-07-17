@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     } catch (error) {
       console.error("Error al cargar historial:", error);
-      addMessage("⚠️ No se pudo cargar el historial completo.", false);
+      // addMessage("⚠️ No se pudo cargar el historial completo.", false);
     }
   }
 
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
       lines.forEach((line) => {
         if (line.startsWith("* ")) {
           if (!listStarted) {
-            htmlOutput += "<ul>";
+            htmlOutput += '<ul style="margin-left: 20px;">';
             listStarted = true;
           }
           htmlOutput += `<li>\t${line.substring(2)}</li>`;

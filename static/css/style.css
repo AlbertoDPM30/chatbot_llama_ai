@@ -205,3 +205,9 @@ body {
   color: #6c757d;
   font-style: italic;
 }
+
+@media (max-width: 768px) {
+  .chat-history {
+    display: none;
+  }
+}

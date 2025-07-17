@@ -47,14 +47,14 @@ def chat():
                     "content": "Eres un especialista en astronomia. Responde a las preguntas de los usuarios con informacion precisa y breve."},
                 {"role": "user", "content": user_message}
             ],
-            "temperature": 0.2,
-            "max_tokens": 300,
-            "top_p": 0.7,
-            "frequency_penalty": 0.5,
+            "temperature": 0.4,
+            "max_tokens": 400,
+            # "top_p": 0.7,
+            "frequency_penalty": 1.0,
 
             "presence_penalty": 0.5,
-            "stop": ["\n\n", "User:", "Assistant:"],
-            "lenght_penalty": 0.5
+            # "stop": ["\n\n", "User:", "Assistant:"],
+            # "lenght_penalty": 0.5
         }
 
         response = requests.post(
@@ -76,7 +76,7 @@ def chat():
         return jsonify({'error': 'Error en la comunicacion con la API'}), 500
 
     except KeyError as e:
-        print(f"Error en la estructura de la respuesta: {e}")
+        print(f"Error en la API_KEY de la respuesta: {e}")
         return jsonify({'error': 'Error en la respuesta de la API'}), 500
 
 
