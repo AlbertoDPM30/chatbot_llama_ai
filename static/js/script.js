@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Mostrar Chatbot
+  let btnShowChatBot = document.querySelector(".btnChatNow");
+  let windowChat = document.querySelector(".chat-wrapper");
+
+  btnShowChatBot.addEventListener("click", function () {
+    // alert("hola");
+    windowChat.style.display = "flex";
+  });
+
   // Cargar historial para el aside nav
   async function loadHistorySidebar() {
     try {
