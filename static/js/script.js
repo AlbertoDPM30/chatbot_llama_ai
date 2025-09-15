@@ -1,11 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Mostrar Chatbot
-  let btnShowChatBot = document.querySelector(".btnChatNow");
+  let btnShowChatBot = document.querySelectorAll(".btnChatNow");
   let windowChat = document.querySelector(".chat-wrapper");
 
-  btnShowChatBot.addEventListener("click", function () {
-    // alert("hola");
-    windowChat.style.display = "flex";
+  btnShowChatBot.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      windowChat.style.display = "flex";
+    });
+  });
+
+  //Ocultar Chatbot
+  let btnCloseChatBot = document.querySelector(".btnCloseChatBot");
+
+  btnCloseChatBot.addEventListener("click", function () {
+    windowChat.style.display = "none";
   });
 
   // Cargar historial para el aside nav

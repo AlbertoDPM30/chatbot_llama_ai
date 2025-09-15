@@ -208,20 +208,36 @@ section {
   border: none;
   background-color: var(--primary);
   border-radius: 50%;
-
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.418);
+  animation: slideInFromRight 0.7s ease-out forwards;
   & img {
     animation: rotate 10s linear infinite;
   }
 }
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.btnChatNow {
+  cursor: pointer;
+}
 
 .chat-wrapper {
+  box-shadow: 2px 2px 10px rgba (0, 0, 0, 0.418);
   position: fixed;
   top: 0;
   right: 0;
   display: none;
   width: 50%;
-
-  /* height: 100dvh; */
+  height: 100dvh;
+  animation: slideInFromRight 0.4s ease-out forwards;
 }
 
 .chat-history {
@@ -268,6 +284,7 @@ section {
 }
 
 .chat-header {
+  position: relative;
   background: var(--primary);
   color: white;
   border-bottom: 1px solid var(--dark);
@@ -279,6 +296,18 @@ section {
   gap: 10px;
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+.btnCloseChatBot {
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
 }
 
 .chat-header img {
@@ -414,7 +443,25 @@ footer p {
   color: #aaa;
 }
 
+footer a {
+  text-decoration: none;
+  color: #ececec;
+
+  &:hover {
+    color: var(--primary);
+  }
+}
+
 @media (max-width: 768px) {
+  .chat-wrapper {
+    width: 100%;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .about-content {
+    flex-direction: column;
+  }
   .chat-history {
     display: none;
   }
